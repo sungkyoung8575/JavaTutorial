@@ -43,6 +43,7 @@ public class _00과제 {
 		int pay = 10000;
 		int change = pay-money;
 		System.out.println(change);
+//		System.out.println("천원"+calcul%10000/1000+"개, 백원"+calcul%1000/100+"개, 십원"+calcul%100/10+"개");
 		System.out.println("천원"+(change/1000)+"개"+"백원"+(change%1000)/100+"개"+"십원"+(change%100)/10+"개");
 		
 		//문제8 -
