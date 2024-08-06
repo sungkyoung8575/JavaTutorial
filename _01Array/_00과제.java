@@ -3,7 +3,7 @@ package _01Array;
 public class _00과제 {
 
 	public static void main(String[] args) {
-		//문제 1
+		//문제 1 - 배열한다 / 저장한다
 		int[] array = new int[5];
 		array[0]=30;
 		array[1]=40;
