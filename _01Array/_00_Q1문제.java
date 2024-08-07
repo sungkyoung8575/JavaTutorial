@@ -1,6 +1,6 @@
 package _01Array;
 
-public class _00과제 {
+public class _00_Q1문제 {
 
 	public static void main(String[] args) {
 		//문제 1 - 배열한다 / 저장한다
