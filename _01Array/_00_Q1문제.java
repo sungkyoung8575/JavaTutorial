@@ -29,10 +29,10 @@ public class _00_Q1문제 {
 		//문제5
 		lotto[0]=6;
 		lotto[1]=lotto[0]+lotto[1];
-		lotto[2]=lotto[0]+lotto[1]+lotto[2];
-		lotto[3]=lotto[0]+lotto[1]+lotto[2]+lotto[3];
-		lotto[4]=lotto[0]+lotto[1]+lotto[2]+lotto[3]+lotto[4];
-		lotto[5]=lotto[0]+lotto[1]+lotto[2]+lotto[3]+lotto[4]+lotto[5];
+		lotto[2]=lotto[1]+lotto[2];
+		lotto[3]=lotto[2]+lotto[3];
+		lotto[4]=lotto[3]+lotto[4];
+		lotto[5]=lotto[4]+lotto[5];
 		System.out.println(lotto[0]+"/"+lotto[1]+"/"+lotto[2]+"/"+lotto[3]+"/"+lotto[4]+"/"+lotto[5]);
 		
 		//문제6
