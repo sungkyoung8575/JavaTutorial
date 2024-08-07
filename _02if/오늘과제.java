@@ -71,9 +71,34 @@ public class 오늘과제 {
 //		 System.out.println((a[2]/10)+(a[2]%10));
 		 
 		 
-		// 8. 총알에 맞는 새 번호
 		 
-		// 9. 슈팅게임
+		// 8. 총알에 맞는 새 번호
+		 int[] x = {6,5,9};
+		 int[] y = {4,10,6};
+		 int bx =3;
+		 int by =2;
+		 
+		 if(x[0]%bx ==0 && y[0]%by ==0) {System.out.println("맞음");
+		 }else {System.out.println("빗나감");
+		 	}
+		 if(x[1]%bx ==0 && y[1]%by ==0) {System.out.println("맞음");
+		 }else {System.out.println("빗나감");
+			}
+		 if(x[2]%bx ==0 && y[2]%by ==0) {System.out.println("맞음");
+		 }else {System.out.println("빗나감");
+			}
+
+		// 9. 슈팅게임 적 가로5세로6 / 미사일 가로2세로2
+		 int aX = 10;
+		 int aY = 20;
+		 int mX = 11;
+		 int mY = 5;
+		 if(aX-2 <= mX && aX+7 >= mX+2) {
+			 System.out.println("hit");
+		 }else {System.out.println("빗나감");
+		 }
+		 
+		 
 	}
 
 }
