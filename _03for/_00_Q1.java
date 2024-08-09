@@ -56,8 +56,9 @@ public class _00_Q1 {
 		int sum3 =0;
 		for(int i=0;i<101;i++) {
 			sum3 += i; 
-			if(sum3 > 44 && 50>sum3) {
+			if(sum3 > 44) {
 				System.out.println("6번"+i);
+				i=101;		//for문 종료하게 하기 ///////***********
 			}
 		}
 		
