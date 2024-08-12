@@ -9,17 +9,27 @@ public class _0809_Q1 {
 //오늘의 목표는 1번부터 8번까지 입니다. 
 //
 //1. 100부터 999까지의 숫자중에서 홀수만 출력하시오.
-	int sumOdd =0;
 	for(int i=100;i<1000;i++) {
 		if(i%2==1) {
-			sumOdd += i;
 			System.out.println(i);
 		}
 	}
-		
+		/* -과정이 더 중요-(구체적으로)
+		 * for문을 작성+초기값100 , 조건 <1000
+		 * i가 홀수인지 판단
+		 */ 
+	
+	
+	
 //2. 1부터 100까지 숫자중에서 홀수의 총합을 구하시오.
-		
-	System.out.println(sumOdd);
+	int sum1 =0;
+	for(int i=1;i<=100;i++) {
+		if(i%2 ==1) {
+			sum1+=i;
+		}
+	}
+	
+	System.out.println(sum1);
 		
 //3. 다음과 같이 출력하시오   10  9  8  7  6  5  4  3  2  1
 	
@@ -28,7 +38,9 @@ public class _0809_Q1 {
 	}
 	
 //4. 배열에서 배열의 값이 짝수인 것만 출력하시오.
-  int[] arr = {45,23,25,64,3,24,48};
+	//   arr.length / i<7  7대신 arr.length써도된대
+	
+  int[] arr = {45,23,25,64,3,24,48};// i를 배열의 인덱스로 보기
 	for(int i=0;i<7;i++) {
 		if(arr[i]%2==0) {
 			System.out.println(arr[i]);
