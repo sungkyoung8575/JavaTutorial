@@ -13,9 +13,9 @@ public class _Q9 {
 //		Random이라는 클래스로 객체를 만들어서 r이라는 참조변수로 참조해서 사용해 보자~
 		Random r = new Random(); 
 		int num = r.nextInt(45)+1;     // 변수 r을 참조하여 nextInt 메서드를 호출함. 매개변수는 랜덤한 숫자의 범위를 지정함
-//		                                     // 즉 0 - 44까지 중 랜덤한 숫자 하나를 선택하여 리턴함.
-//		                                     // 로또 번호는 1-45까지 이므로 리턴값이 +1로 보정함
-//		                                     // 리턴값을 보정하여  num변수의 값에 대입
+//		System.out.println(num);       // 즉 0 - 44까지 중 랜덤한 숫자 하나를 선택하여 리턴함.
+//		                               // 로또 번호는 1-45까지 이므로 리턴값이 +1로 보정함
+//		                               // 리턴값을 보정하여  num변수의 값에 대입
 //
 //		위 코드를 이용하여
 //
@@ -34,8 +34,9 @@ public class _Q9 {
 		
 		for(int i=0;i<lotto.length;i++) {
 			lotto[i]=r.nextInt(45)+1;
+			System.out.print("["+lotto[i]+"]");
 		}
-		System.out.println(lotto[0]+"/"+lotto[1]+"/"+lotto[2]+"/"+lotto[3]+"/"+lotto[4]+"/"+lotto[5]);
+//		System.out.println(lotto[0]+"/"+lotto[1]+"/"+lotto[2]+"/"+lotto[3]+"/"+lotto[4]+"/"+lotto[5]);
 
 		
 		

@@ -1,6 +1,6 @@
 package _03for;
 
-public class _0812_for_final_Q1 {
+public class _0812_Q1_Q4 {
 
 	public static void main(String[] args) {
 //		오늘 문제는 for문 하나로 코드를 작성하는 정리 문제입니다.

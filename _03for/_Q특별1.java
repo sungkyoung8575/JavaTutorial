@@ -14,21 +14,24 @@ public class _Q특별1 {
 //		조건 : 형변환은 사용하지 않는다. 메서드는  charAt()만 사용한다. 
 		int temp=0;
 		for(int i=0;i<a.length();i++) {
-			temp=a.charAt(i)-48;
+			temp=a.charAt(i)-'0';
+			System.out.println(temp);
 			if(temp>-1) {
-				b[temp]=b[temp]+1;
+				b[temp]++;
 			}
 		}
 		System.out.println(b[0]+"/"+b[1]+"/"+b[2]+"/"+b[3]+"/"+b[4]+"/"+b[5]+"/"+b[6]+"/"+b[7]+"/"+b[8]+"/"+b[9]);
 		
 //
-//		특별2
+//		특별2  // 아직 무리 !!! 나중에 
 //		 String a ="67/414/1/23/32/45/54/12/11/232"
 //		문자열 a는 해충에 대한 숫자를 카운팅한 결과이다.
 //		해충의 갯수를 모두 합하시오.
 //		charAt() 메서드만 사용이 가능하다. 
 //		형변환이 필요하면 검색하여 사용하시오.
-
+		
+		
+		
 
 	}
 
