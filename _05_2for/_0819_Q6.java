@@ -22,7 +22,7 @@ public class _0819_Q6 {
 					cnt++;
 				}
 			}
-			System.out.println("a배열의 값에는 "+b[i]+"보다 큰 숫자가"+cnt+"개 있습니다.");
+			System.out.println("a배열의 값에는 "+b[i]+"보다 큰 숫자가 "+cnt+"개 있습니다.");
 			cnt=0;
 		}
 		

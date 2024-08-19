@@ -15,7 +15,7 @@ public class _0819_Q5 {
 				cnt++;
 			}
 		}
-		System.out.println("40보다 큰수"+cnt+"개");
+		System.out.println("40보다 큰수 "+cnt+"개");
 		
 		
 		
