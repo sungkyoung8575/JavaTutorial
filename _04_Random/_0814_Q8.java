@@ -26,7 +26,7 @@ public class _0814_Q8 {
 				lotto[i] = k;
 			}
 		}
-		// 로또 번호를 출력하는 반복문
+		// 로또 번호를 출력하는 반복문16
 		for (int i = 0; i < lotto.length; i++) {
 			if (i == lotto.length - 1) { // 마지막 번호
 				System.out.println("보너스 : " + lotto[i]);
