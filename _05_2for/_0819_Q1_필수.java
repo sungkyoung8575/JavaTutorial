@@ -1,6 +1,6 @@
 package _05_2for;
 
-public class _0819_Q1 {
+public class _0819_Q1_필수 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

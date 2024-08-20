@@ -12,6 +12,24 @@ public class _0819_Q10 {
 //		size 설정값에 따라 공터에 건물을 지을 수 있는 위치는 모두 몇개인가?
 //		size가 2일경우에 7개이다. 
 		
+		int cnt=0;
+		int home=0;
+		
+		for(int i=0; i < arr.length; i++) {
+			cnt=0;
+			for(int j=i; j < arr.length; j++) {
+				if(arr[j]==0) {
+					cnt++;
+				}else {
+					break;
+				}
+			}
+			if(cnt>=size) {
+				home += cnt-size+1;		//
+				i += cnt-1;
+			}
+		}
+		System.out.println("건물 수 "+home);
 		
 		
 	}
