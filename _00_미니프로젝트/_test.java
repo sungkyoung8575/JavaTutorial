@@ -16,6 +16,11 @@ public class _test {
 		  int num=random.nextInt(40);
 		  System.out.print(str.charAt(num));
 	  }
+	  
+	  
+	  
+	  
+	  
 		
 	}
 
