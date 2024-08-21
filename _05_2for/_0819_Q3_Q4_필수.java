@@ -45,7 +45,6 @@ public class _0819_Q3_Q4_필수 {
 		 * 
 		 */
 		
-		System.out.println("--------------");	
 		
 //		4. 
 //		*******
