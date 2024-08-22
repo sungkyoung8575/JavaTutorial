@@ -10,13 +10,13 @@ public class _김성경김희태 {
 
 		Scanner in = new Scanner(System.in);
 		Random r= new Random();
-		String[] ko= {"몬스테라","피자","스투키","노래","커피","라면","로즈마리","바질","라벤더",
+		String[] kr= {"몬스테라","피자","스투키","노래","커피","라면","로즈마리","바질","라벤더",
 				"팔손이","사과", "바나나", "오렌지", "전체", "블로그", "네이버", "자바","사탕", "촬영", "레벨", 
 				"정렬", "영어", "파워", "링크", "가이드","토익", "도서", "전국", "가격", "다운로드"};
 		String[] en= {"red","yellow","blue","green","purple","Orange","Pink","Black","White","Gray","apple", 
 				"banana", "orange", "total", "blog", "naver", "java","tutorial", "once", "level", "sort", 
 				"english", "power", "link", "guide","toeic", "book", "national", "price", "download"};
-		String[] koHard= {"횡단보도","쌍둥이","익스플로러","짱구","측량사","어휘력향상","독립군","철학적사고","감독자격","특별회원"};
+		String[] krHard= {"횡단보도","쌍둥이","익스플로러","짱구","측량사","어휘력향상","독립군","철학적사고","감독자격","특별회원"};
 		String[] enHard= {"Awkward","Rhythm","Liaison","Subpoena","Colloquial","Czechoslovakia","Uncharacteristically","Phenomenon","Pneumonia","Bureaucracy"};
 
 		int[] a=new int[30];		// 중복되지않게 비교할수있는 임시배열
@@ -40,7 +40,7 @@ public class _김성경김희태 {
 	       System.out.println();
 			int selec = in.nextInt();
 			in.nextLine();	
-			String[] word = (selec == 1) ? ko : en; // 한글,영문 배열 선택하기
+			String[] word = (selec == 1) ? kr : en; // 한글,영문 배열 선택하기
 					
 			System.out.println();
 			System.out.println("문제는 총 10문제 입니다.");
@@ -110,7 +110,7 @@ public class _김성경김희태 {
 		       System.out.print("     번호를 선택해주세요: ");
 				int selec1 = in.nextInt();
 				in.nextLine();	
-				String[] word1 = (selec1 == 1) ? koHard : enHard;
+				String[] word1 = (selec1 == 1) ? krHard : enHard;
 			
 			for(int i=1;i<=10;i++) {
 				int num1=r.nextInt(10);
