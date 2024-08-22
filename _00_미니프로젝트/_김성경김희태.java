@@ -25,20 +25,22 @@ public class _김성경김희태 {
 		int cnt=0;			//점수 카운트
 		int cntF=0;			// 틀린문제 카운트
 
-
 		
-	       System.out.println("--------야매 타자 연습 게임--------");
+	       System.out.println("╭ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝╮\r\n"
+	       		+"        타자 연습 게임     "+"\n"
+	       		+ "╰ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ╯\r\n"
+	       		+ "O\r\n"
+	       		+ "°\r\n"
+	       		+ " /}__/}\r\n"
+	       		+ "( • ▼•)  1 한글  /  2 영문  "
+	       		+ "");
 	       System.out.println();
-	       System.out.println("     1 한글  /  2 영문  ");
+	       
 
 	       System.out.println();
 			int selec = in.nextInt();
 			in.nextLine();	
-			String[] word = (selec == 1) ? ko : en; // 한글,영문 선택하기 (검색해서찾음)
-			//String[] word=""; 
-			//if(selec==1){
-			//		word=ko;}
-			// else { word=en;}
+			String[] word = (selec == 1) ? ko : en; // 한글,영문 배열 선택하기
 					
 			System.out.println();
 			System.out.println("문제는 총 10문제 입니다.");
@@ -69,11 +71,16 @@ public class _김성경김희태 {
 				i=i-1;
 			}	
 			if(i==10) {
-				System.out.println("================");
+				System.out.println("==========================");
 				System.out.println("게임종료 ▶총점수 "+cnt);
-				System.out.println("================");
+				System.out.println("==========================");
 				if(cnt<80) {
-					System.out.println(cntF+"문제 틀렸습니다...까비..");
+					System.out.println("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\r\n"
+							+ "████▌▄▌▄▐▐▌█████\r\n"
+							+ "████▌▄▌▄▐▐▌▀████\r\n"
+							+ "▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\r\n"
+							+ "");
+					System.out.println(cntF+" 문제 틀렸습니다...까비..");
 					System.out.println("재도전 하시겠습니까?");
 					System.out.println("1.네   "+ ""+"2.아니오");
 					selec = in.nextInt();
@@ -82,8 +89,14 @@ public class _김성경김희태 {
 						break;		// 재도전 안하면 종료되게
 					}else {
 						i=0;		// 재도전하면 다시 처음으로 돌아가기 위해 
+						cnt=0;
+						cntF=0;
 					}
 				}else {
+					System.out.println("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\r\n"
+							+ "█░░░░░░░░▀█▄▀▄▀██████░▀█▄▀▄▀██████░\r\n"
+							+ "░░░░░░░░░░░▀█▄█▄███▀░░░ ▀██▄█▄███▀░\r\n"
+							+ "");
 					System.out.println("좀 더 어렵게 ㄱㄱ?");
 					System.out.println("1.ㄱㄱ   "+ ""+"2.놉");
 					selec = in.nextInt();
@@ -119,7 +132,12 @@ public class _김성경김희태 {
 			}
 		}
 		System.out.println("================================");
-		System.out.println("종료");
+		System.out.println("。　♡ 。　　♡。　　♡\r\n"
+				+ "♡。　＼　　｜　　／。　♡\r\n"
+				+ "　      끝\r\n"
+				+ "♡。　／　　｜　　＼。　♡\r\n"
+				+ "。　♡。 　　。　　♡。\r\n"
+				+ "");
 
 
 		
