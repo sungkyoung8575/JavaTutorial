@@ -3,7 +3,7 @@ package _00_미니프로젝트;
 import java.util.Random;
 import java.util.Scanner;
 
-public class _00김성경김희태 {
+public class _00김성경 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,6 +12,7 @@ public class _00김성경김희태 {
 		Random r= new Random();
 		String[] ko= {"몬스테라","산세베리아","스투키","필로덴드론","스파티필럼","관엽식물","로즈마리","바질","라벤더","팔손이"};
 		String[] en= {"red","yellow","blue","green","purple","Orange","Pink","Black","White","Gray"};
+		
 		int[] a=new int[10];
 		int num=0;
 		int cnt=0;
