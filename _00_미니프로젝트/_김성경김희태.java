@@ -38,10 +38,14 @@ public class _김성경김희태 {
 	       
 
 	       System.out.println();
-			int selec = in.nextInt();
-			in.nextLine();	
-			String[] word = (selec == 1) ? kr : en; // 한글,영문 배열 선택하기
-					
+			int selec = in.nextInt();	
+			in.nextLine();
+			
+			String[] word = (selec==1) ? kr : en; // 한글,영문 배열 선택하기
+			
+			
+
+								
 			System.out.println();
 			System.out.println("문제는 총 10문제 입니다.");
 		       System.out.println(" 시작합니다 !");
@@ -83,8 +87,8 @@ public class _김성경김희태 {
 					System.out.println(cntF+" 문제 틀렸습니다...까비..");
 					System.out.println("재도전 하시겠습니까?");
 					System.out.println("1.네   "+ ""+"2.아니오");
-					selec = in.nextInt();
-					in.nextLine();	
+					selec = in.nextInt();	
+					in.nextLine();
 					if(selec==2) {
 						break;		// 재도전 안하면 종료되게
 					}else {
