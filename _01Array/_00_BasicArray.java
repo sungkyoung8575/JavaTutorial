@@ -3,7 +3,7 @@ package _01Array;
 public class _00_BasicArray {
 
 	public static void main(String[] args) {
-		// 내용 : 자바의 배열
+		// 내용 : 자바의 배열ㅇ
 		/* 특징 : 변수 하나로 여러개의 값을 저장함
 		 * 		 같은 자료형을 연속적으로 저장
 		 * 		 (나중에는 다른 자료형도 저장 할 수 있는 것 배울예정)
