@@ -24,7 +24,7 @@ public class _00test {
 		int[] b=new int[10];
 		int num=0;
 		int cnt=0;			//점수 카운트
-		int cntF=0;			// 틀린문제 카운트
+		int cntF=0;			// 틀린문제 카운트ㅇ
 
 		
 	       System.out.println("╭ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝╮\r\n"
