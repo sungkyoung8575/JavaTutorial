@@ -4,7 +4,7 @@ public class Test01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// 정수 변수 선언
+		// 정수 변수 선언ㅇ
 		int a =10;
 		byte aa =10;
 		System.out.println(a);
