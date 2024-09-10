@@ -3,7 +3,7 @@ package _02if;
 public class _00_basic {
 
 	public static void main(String[] args) {
-		// 조건식으로 참과 거짓을 구분하여 코드를 분리하는 if
+		// 조건식으로 참과 거짓을 구분하여 코드를 분리하는 ifㅇ
 		// 조건타입
 		// 조건이 하나 인경우
 		// 1차조건,2차조건,3차조건이 순서 판별하면서 하나의 조건에 해당하는경우
