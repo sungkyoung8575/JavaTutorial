@@ -5,7 +5,7 @@ import java.util.Random;
 public class _00test { 
 
 	public static void main(String[] args) {
-		// 6개의 랜덤한 로또번호를 뽑아서 저장한다.
+		// 6개의 랜덤한 로또번호를 뽑아서 저장한다.ㄴ
 		
 		// 로또 번호 저장할 배결	
 		int[] lotto = new int[6];		// 변수명, 길이 , 인덱스
