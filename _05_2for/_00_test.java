@@ -6,7 +6,7 @@ public class _00_test {
 		// TODO Auto-generated method stub
 		
 		
-		// 1단만 
+		// 1단만 ㅇ
 		for(int i=0;i<5;i++) {
 			System.out.println("1*"+i+"="+(i*1));
 		}
