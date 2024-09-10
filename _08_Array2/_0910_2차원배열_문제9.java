@@ -1,5 +1,7 @@
 package _08_Array2;
 
+import java.util.Scanner;
+
 public class _0910_2차원배열_문제9 {
 
 	public static void main(String[] args) {
@@ -20,7 +22,31 @@ public class _0910_2차원배열_문제9 {
 
 		//  아직 무리 입니다  //
 		
-		
+	int[][] b= {{1,1,0,2},
+				{3,2,1,2},
+				{0,0,3,2},
+				{4,4,4,4},
+				{2,4,3,1},
+				{2,4,1,3}};
+	Scanner in = new Scanner(System.in);
+	System.out.println("0~5 사이 숫자를 입력하세요");		// 행 인덱스번호 받아오기
+	int row = in.nextInt();
+	System.out.println("0~3 사이 숫자를 입력하세요");		// 열 인덱스번호 받아오기
+	int cal = in.nextInt();
+	System.out.println("b["+row+"]"+"["+cal+"]");	// 좌표출력
+	
+	//System.out.println(b[row][cal]);
+
+
+	for(int i=0;i<b[row].length;i++) {
+		//System.out.print(b[row][i]+"\t");
+	}
+	
+	
+	
+	
+	
+	
 	}
 
 }

@@ -61,8 +61,8 @@ public class _0910_2차원배열_문제8 {
 				}else if (cnt[j]+1>3) {					// 3개 이상일때추가로 나오게해봄..
 					System.out.println("b"+"["+i+"]"+"["+j+"]");
 				}
-			}else {cnt[j]=0;}
-			c[j]=b[i][j];
+				}else {cnt[j]=0;}
+				c[j]=b[i][j];
 			if(b[i][j]==temp) {
 				cntG++;
 				if((cntG+1)==3) {
