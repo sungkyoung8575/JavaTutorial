@@ -20,7 +20,7 @@ public class _0910_2차원배열_문제5 {
 		
 		for(int i=0;i<a.length;i++) {
 			for(int j=0;j<a[i].length;j++){
-				if (a[i][j]%2==1) {
+				if (a[i][j]%2==1) {		// 홀수라면 0으로 마스킹
 					a[i][j]=0;
 				}
 				System.out.print(a[i][j]+"\t");
@@ -28,7 +28,9 @@ public class _0910_2차원배열_문제5 {
 			System.out.println();
 		}
 		
-		
+		/*
+		 * 행과 열 모두 순회해서 홀수 라면 해당값을 0으로 바꿔줌
+		 */
 		
 	}
 

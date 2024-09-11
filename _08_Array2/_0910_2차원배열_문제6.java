@@ -19,6 +19,20 @@ public class _0910_2차원배열_문제6 {
 			System.out.println();
 		}
 		
+//		혼자풀때 i를 4로 했음 아쉬움  밑에 선생님풀이참조
+		
+//		for (int i = a.length-1; i >= 0; i--) {
+//			for (int j = a[i].length-1; j >= 0; j--) {
+//				System.out.print(a[i][j] + "\t");
+//			}
+//			System.out.println();
+//		}
+
+		
+		
+		
+		
+		
 	}
 
 }
