@@ -1,4 +1,4 @@
-package _08_Array2;
+package _09_Array2;
 
 public class _0913_문제0_sample {
 

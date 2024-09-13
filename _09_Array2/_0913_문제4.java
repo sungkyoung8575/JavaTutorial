@@ -1,4 +1,4 @@
-package _08_Array2;
+package _09_Array2;
 
 public class _0913_문제4 {
 
@@ -11,13 +11,11 @@ public class _0913_문제4 {
 //문제4.		
 		// 배열 값 입력부
 /*		1	2	4	7	11
-		3	5	8	12	*15		// 쪼개서 2중for문 두개로 풀수도있고! 
+		3	5	8	12	*15		// *쪼개서 2중for문 두개로 풀수도있고! 
 		6	9	13	*16	18		// i(열)를 8번 반복하되 필요없는부분 스킵하고 넘어갈수도있음
 		10	14	*17	19	20
 		
-		
-		
-		
+		액셀로 메모
 */		
 		// 여기에 문제풀기 
 		
@@ -38,7 +36,7 @@ public class _0913_문제4 {
 		//배열값 출력부
 		for(int i=0; i<a.length;i++) {
 			for(int j=0; j<a[0].length; j++) {
-				System.out.print(a[i][j]+" ");
+				System.out.print(a[i][j]+"\t");
 			}
 			System.out.println();
 		}
