@@ -21,6 +21,10 @@ public class _0910_2차원배열_문제9 {
 		
 
 		//  아직 무리 나 아직 못풀었음   //
+		/* 알고리즘 탐색 검색해봐
+		 * 코드를 기능별로 나눠봐
+		 * 1.탐색 - 왼쪽 오른쪽 탐색 (첫 좌표 a[2][1] 기준 => 왼 a[2][1] a[2][0] / 오 a[2][1] a[2][2] a[2][3] 이런식으로 
+		 */
 		
 	int[][] b= {{1,1,0,2},
 				{3,2,1,2},
@@ -32,10 +36,10 @@ public class _0910_2차원배열_문제9 {
 	System.out.println("0~5 사이 숫자를 입력하세요");		// 행 인덱스번호 받아오기
 	int row = in.nextInt();
 	System.out.println("0~3 사이 숫자를 입력하세요");		// 열 인덱스번호 받아오기
-	int cal = in.nextInt();
-	System.out.println("b["+row+"]"+"["+cal+"]");	// 좌표출력
+	int col = in.nextInt();
+	System.out.println("b["+row+"]"+"["+col+"]");	// 좌표출력
 	
-	//System.out.println(b[row][cal]);
+	//System.out.println(b[row][col]);
 
 
 	for(int i=0;i<b[row].length;i++) {
