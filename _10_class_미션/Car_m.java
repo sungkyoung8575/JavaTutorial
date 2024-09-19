@@ -52,8 +52,8 @@ public class Car_m {
 	}
 	public void delete() {
 		System.out.println("삭제");
-
-		}
+// 아무리해도 모르겠음 이해를 못하고있나봄
+	}
 		
 	public void cList() {
 		System.out.println("차량조회");
