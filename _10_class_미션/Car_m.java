@@ -51,8 +51,15 @@ public class Car_m {
 		
 	}
 	public void delete() {
-		System.out.println("삭제");
-// 아무리해도 모르겠음 이해를 못하고있나봄
+		System.out.println("삭제-휴대폰번호 뒷자리입력");
+// 아무리해도 모르겠음 이해를 못하고있나봄 안됨
+		int a= in.nextInt();
+		in.nextLine();
+		for(int i=0;i<carList.length;i++) {
+			if(carList[i].pNum==a) {
+				carList[i]=null;
+			}
+		}
 	}
 		
 	public void cList() {
