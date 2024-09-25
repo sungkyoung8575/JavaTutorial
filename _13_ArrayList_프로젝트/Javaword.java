@@ -73,12 +73,27 @@ public class Javaword {
 		String temp=in.nextLine();
 		for(int i=0;i<wList.size();i++) {
 			if(wList.get(i).en.equals(temp)) {
+				
+				System.out.println("수정할 영어단어 입력");
+				wList.get(i).en = in.nextLine();
+				
+				System.out.println("수정할 한글 뜻 입력");
+				wList.get(i).kr = in.nextLine();
+/* 원래 이렇게 했음 / 이러면 할때마다 새로운 객체를 만들게되서 위에꺼가 더 좋다고함(명균아저씨가)
+ * public void mod() {
+		System.out.println("검색할 영어단어 입력");
+		String temp=in.nextLine();
+		for(int i=0;i<wList.size();i++) {
+			if(wList.get(i).en.equals(temp)) {
 				Word newWord=new Word();
 				System.out.println("수정할 영어단어 입력");
 				newWord.en=in.nextLine();
 				System.out.println("수정할 한글 뜻 입력");
 				newWord.kr=in.nextLine();
 				wList.set(i,newWord);
+			}
+		}
+ */	
 			}
 		}
 		
