@@ -62,13 +62,14 @@ public class Javaword {
 		for(int i=0;i<wList.size();i++) {
 			if(wList.get(i).en.equals(temp)) {
 				wList.remove(i);
-				
+				// 지웠으면 for 종료시켜주는게 좋음
+				break;
 			}
 		}
 		
 	}
 	
-	public void mod() {
+/*	public void mod() {
 		System.out.println("검색할 영어단어 입력");
 		String temp=in.nextLine();
 		for(int i=0;i<wList.size();i++) {
@@ -79,10 +80,11 @@ public class Javaword {
 				
 				System.out.println("수정할 한글 뜻 입력");
 				wList.get(i).kr = in.nextLine();
-/* 원래 이렇게 했음 / 이러면 할때마다 새로운 객체를 만들게되서 위에꺼가 더 좋다고함(명균아저씨가)
- * public void mod() {
+*/
+  public void mod() {
 		System.out.println("검색할 영어단어 입력");
 		String temp=in.nextLine();
+		boolean flag= true;  // 검색한 단어가 없을수 있으니 변수하나 만들어주고
 		for(int i=0;i<wList.size();i++) {
 			if(wList.get(i).en.equals(temp)) {
 				Word newWord=new Word();
@@ -91,19 +93,20 @@ public class Javaword {
 				System.out.println("수정할 한글 뜻 입력");
 				newWord.kr=in.nextLine();
 				wList.set(i,newWord);
+				flag=false;			// 단어를 수정했다면 false 로 바꿔주기
+				break; 		//for 종료해주기
 			}
 		}
- */	
-			}
+		if(flag) {		// (flag=true)라면 바뀐게 없는거니까 포문 끝나고 확인해서 요러케
+			System.out.println("변경할 단어가 없습니다.");
 		}
+
+		
+		
+		
 		
 		
 	}
-		
-		
-		
-	
-
 }
 
 
