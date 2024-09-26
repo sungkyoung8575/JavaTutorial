@@ -85,7 +85,7 @@ public class Javaword {
 		System.out.println("검색할 영어단어 입력");
 		String temp=in.nextLine();
 		boolean flag= true;  // 검색한 단어가 없을수 있으니 변수하나 만들어주고
-		for(int i=0;i<wList.size();i++) {
+		for(int i = 0; i < wList.size(); i++) {
 			if(wList.get(i).en.equals(temp)) {
 				Word newWord=new Word();
 				System.out.println("수정할 영어단어 입력");
