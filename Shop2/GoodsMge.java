@@ -1,19 +1,19 @@
-package Shop;
+package Shop2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 // 관리자모드로 상품 관리하기 
-public class GoogsMge {
+public class GoodsMge {
 	Scanner in=new Scanner(System.in);
-	ArrayList<Googs> gList=new ArrayList<>();  // 등록된 상품리스트
+	ArrayList<Goods> gList=new ArrayList<>();  // 등록된 상품리스트
 	
-	public GoogsMge() { 
+	public GoodsMge() { 
 	
 		
 	}
 	
-	public void googsMenu() {
+	public void goodsMenu() {
 		
 		while(true) {
 			System.out.println("메뉴선택");
@@ -21,19 +21,22 @@ public class GoogsMge {
 			System.out.println("2. 수정");
 			System.out.println("3. 삭제");
 			System.out.println("4. 조회");
-			System.out.println("5. 메인메뉴");
+			System.out.println("5. 총 매출 확인");
+			System.out.println("6. 메인메뉴");
 			int selNum=0;
 			selNum=in.nextInt();
 			in.nextLine();
 			if(selNum==1) {
-				googsAdd();
+				goodsAdd();
 			}else if(selNum==2) {
-				googsMod();
+				goodsMod();
 			}else if(selNum==3) {
-				googsDel();
+				goodsDel();
 			}else if(selNum==4) {
-				googsList();
+				goodsList();
 			}else if(selNum==5) {
+				System.out.println("원");
+			}else if(selNum==6) {
 				break;
 			}
 		}
@@ -41,44 +44,51 @@ public class GoogsMge {
 		
 	}
 	
-	public void googsAdd() {	// 상품등록하기
-		Googs temp=new Googs();
+	public void goodsAdd() {	// 상품등록하기
+		Goods temp=new Goods();
 		System.out.println("상품명 입력");
-		temp.googsName = in.nextLine();
+		temp.setName(in.nextLine());
 		System.out.println("입고된 수량 입력");
-		temp.googsNum = in.nextInt();
+		temp.setNum(in.nextInt());
 		in.nextLine();
-		if(gList.size()==0) {
-				gList.add(temp);
-		}else {
-			for(int i=0; i<gList.size();i++) {
-				if(gList.get(i).googsName.equals(temp.googsName)) {
-					temp.googsNum=gList.get(i).googsNum+temp.googsNum;
-					gList.set(i, temp);
+		System.out.println("가격 입력");
+		temp.pay=in.nextInt();
+		in.nextLine();
+		//같은 품명의 등록된 상품이 있는지 스캔
+		int idx=-1;
+		if(gList.size()!=0) {
+			for(int i=0;i<gList.size();i++) {
+				if(gList.get(i).getName().equals(temp.getName())) {
+					idx=i;
 				}
 			}
 		}
-			
-		
-		
+		//이미 등록되어 있으면 구매수량만 추가
+		//등록되어있지 않으면 품목추가
+		if(gList.size()==0||idx==-1) {
+			gList.add(temp);
+		}else {
+			for(int i=0;i<gList.size();i++) {
+				if(gList.get(i).getName().equals(temp.getName())){
+					gList.get(i).addNum(temp.goodsNum);
+				}
+			}
+		}
 	
 		
-	
-
 	}
 	
-//	public void search() {
-	public void googsMod() {	// 상품수정
+	public void goodsMod() {	// 상품수정
 		System.out.println("상품명 입력");
 		String temp=in.nextLine();
 		boolean flag= true;  // 검색한 상품이 없을수 있으니 변수하나 만들어주고
 		for(int i = 0; i < gList.size(); i++) {
-			if(gList.get(i).googsName.equals(temp)) {
-				Googs newGoogs=new Googs();
+			if(gList.get(i).getName().equals(temp)) {
+				Goods newGoogs=new Goods();
 				System.out.println("변경할 상품명 입력");
-				newGoogs.googsName=in.nextLine();
+				newGoogs.setName(in.nextLine());
 				System.out.println("변경할 수량 입력");
-				newGoogs.googsNum=in.nextInt();
+				newGoogs.setNum(in.nextInt());
 				in.nextLine();
 				gList.set(i,newGoogs);
 				flag=false;			//  수정했다면 false 로 바꿔주기
@@ -90,12 +100,12 @@ public class GoogsMge {
 		}
 	}
 	
-	public void googsDel() {	// 상품삭제
+	public void goodsDel() {	// 상품삭제
 		System.out.println("상품명 입력");
 		String temp=in.nextLine();
 		boolean flag= true;  // 
 		for(int i = 0; i < gList.size(); i++) {
-			if(gList.get(i).googsName.equals(temp)) {
+			if(gList.get(i).getName().equals(temp)) {
 				gList.remove(i);
 				flag=false;			//  수정했다면 false 로 바꿔주기
 				break; 		//for 종료해주기
@@ -107,7 +117,7 @@ public class GoogsMge {
 		
 	}
 	
-	public void googsList() {	// 상품전체 리스트
+	public void goodsList() {	// 상품전체 리스트
 		for(int i=0;i<gList.size();i++) {
 			gList.get(i).prt();
 		}
