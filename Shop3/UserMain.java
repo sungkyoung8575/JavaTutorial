@@ -1,4 +1,4 @@
-package Shop2;
+package Shop3;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -8,7 +8,6 @@ public class UserMain {
 	UserReg ureg=null;
 	GoodsMge gmge = null;
 	UserReg login=null;
-	static int sales=0;		
 	//회원가입한 유저를 저장할 arrayList
 	ArrayList<UserReg> ulist=new ArrayList<>();
 	
@@ -157,26 +156,42 @@ public class UserMain {
 			int buyNum=in.nextInt();
 			in.nextLine();
 			int total=gmge.gList.get(idx).pay*buyNum;
-			for(int i=0; i< gmge.gList.size();i++) {
-				//남은 수량내에서 구매가능
-				if(gmge.gList.get(i).getNum()-buyNum>=0) {	
-					// 잔액없으면 구매불가
-					if(total<=login.money) {
-						ureg.buyGoods(buy, buyNum);
-						login.setMoney(gmge.gList.get(idx).pay,buyNum);
-						gmge.gList.get(idx).goodsNum-=buyNum;
-						System.out.println("총금액 "+total+"원");
-						sales+=total;
-						break;
-					}else {System.out.println("잔액을 확인하세요");}
+			//해당하는 품목수량과 구매수량을 비교하여 구매여부확인
+			if(gmge.gList.get(idx).getNum()>=buyNum) {
+				if(total<=login.money) {
+					ureg.buyGoods(buy, buyNum);
+					login.setMoney(gmge.gList.get(idx).pay,buyNum);
+					gmge.gList.get(idx).goodsNum-=buyNum;
+					System.out.println("총금액 "+total+"원");
+					gmge.addSale(total);
 				}else {
-					System.out.println("구매수량이 너무 많습니다");
+					System.out.println("잔액을 확인하세요");
 				}
-				
-				if(gmge.gList.get(i).getNum()==0) {
-					gmge.gList.remove(i);
-				}
+			}else {
+				System.out.println("구매수량이 많습니다");
 			}
+//			for(int i=0; i< gmge.gList.size();i++) {
+//				//남은 수량내에서 구매가능
+//				if(gmge.gList.get(i).getNum()-buyNum>=0) {	
+//					// 잔액없으면 구매불가
+//					if(total<=login.money) {
+//						ureg.buyGoods(buy, buyNum);
+//						login.setMoney(gmge.gList.get(idx).pay,buyNum);
+//						gmge.gList.get(idx).goodsNum-=buyNum;
+//						System.out.println("총금액 "+total+"원");
+//						gmge.addSale(total);
+//						break;
+//					}else {
+//						System.out.println("잔액을 확인하세요");
+//					}
+//				}else {
+//					System.out.println("구매수량이 너무 많습니다");
+//				}
+//				
+//				if(gmge.gList.get(i).getNum()==0) {
+//					gmge.gList.remove(i);
+//				}
+//			}
 		}
 	}
 	

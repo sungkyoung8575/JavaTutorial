@@ -1,4 +1,4 @@
-package Shop2;
+package Shop3;
 
 import java.util.ArrayList;
 
