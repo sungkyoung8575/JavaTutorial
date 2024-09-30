@@ -1,5 +1,5 @@
-
+ 접근제어자 -
 default(생략가능)	- package 내에서 접근가능
 public			- 전체
 private			- class 내에서 접근가능
-protected(잘안씀)	-
+protected(잘안씀)	
