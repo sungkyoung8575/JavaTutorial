@@ -1,4 +1,4 @@
-package Shop4;
+package Shop4_이게최종;
 
 public class Start {
 	//메인클래스
