@@ -30,7 +30,7 @@ public class Main {
 		
 		
 		
-		MemberADM.teamName="kkk";	
+//		MemberADM.teamName="kkk";	
 		// 상수는 초기값이 결정되면 값을 변경할수없다
 		
 		
